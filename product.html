@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html lang="zh-tw"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHIA-HUI CHOU PORTFOLIO</title>
+    <meta name="Keywords" content="履歷,工作,作品">
+    <meta name="description" content="個人履歷">
+
+  
+    
+    <link rel="stylesheet" href="css/style_product.css">
+    
+    <script async="" src="https://d.line-scdn.net/n/line_tag/public/release/v1/lt.js"></script>
+    
+    <script type="text/javascript" src="js/lib/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/lib/slick.min.js"></script>
+    <style>
+ 
+    </style>
+ 
+  <script id="sgs_script1" type="text/javascript">var SF = {}; SF.mode = "client";SF.GLOBAL = SF.GLOBAL || {};SF.GLOBAL["client_domain"] = "churacostw.tw";SF.GLOBAL["server_domain"] = "pop.unitedgate.co.jp";SF.GLOBAL["sgs_show"] = "";SF.GLOBAL["mode"] = "client";SF.GLOBAL["target_path"] = "churacos/churacostw/";SF.GLOBAL["dir"] = "https://pop.unitedgate.co.jp/core/v4";SF.GLOBAL["base_path"] = "https://pop.unitedgate.co.jp";SF.GLOBAL["client_path"] = "https://pop.unitedgate.co.jp/churacos/churacostw/";
+    (function() { 
+        function afterScript() {
+            var sgs_id = 'sgs_client';
+            var sgs_num = 1;
+            while(true) {
+                var exist = document.getElementById(sgs_id + sgs_num);
+                if(!exist) { break; }
+                sgs_num++;
+            }
+			var sgs_after = document.createElement('script');
+			sgs_after.id  = sgs_id + sgs_num;
+			sgs_after.src = 'https://pop.unitedgate.co.jp/churacos/churacostw/_client.js';
+			document.getElementsByTagName('head')[0].appendChild(sgs_after);
+		};
+        if(document.getElementById('sgs') == null) {
+            var sgs_tag = document.createElement('script');
+            sgs_tag.id = 'sgs';
+            sgs_tag.src = 'https://pop.unitedgate.co.jp/core/v4/release/sgs-v4.min.js';
+            sgs_tag.onload = function() { afterScript(); };
+            document.getElementsByTagName('head')[0].appendChild(sgs_tag); 
+        }
+        else {
+            var iv = setInterval( function() {
+                if(typeof SGS === 'undefined') { return }
+                if(typeof SGS.Client === 'undefined') { return }
+                if(typeof SGS.Client.init === 'undefined') { return }
+                clearInterval(iv);
+                afterScript();
+            }, 0 );
+        }
+    })();</script>
+    
+    
+   
+</head>
+<body>
+    <div class="wrapBg">
+        <nav>
+
+          <div class="navBar">
+              <div class="navBar_Menu">
+                  <a><img src="images/threelines.svg" class="menu_btn" onclick="openMenu()" alt=""></a>
+                  <div class="navBar_Item">
+                      
+                      <ul class="btn_area close">
+                          <li><a href="index.html">主頁</a></li>
+                          <li><a href="resume.html">履歷</a></li>
+                          <li><a href="product.html">作品</a></li>
+                          <li class="go_top_btn"><a href="#go_top">TOP</a></li>
+                        </ul>
+                        
+                    </div>
+                </div>
+        </nav>
+    </div>
+     
+      <main id="go_top">
+        <div class="allItem">
+
+            <div class="item">
+                <div class="contentBox">
+                    <h3>PHP</h3>
+                    <img src="images/tk1.png" width="230" >
+                    <a href="https://022d-2001-b011-381a-f0c4-7947-1e15-c04e-9248.ngrok-free.app/php//" target="_blank" title="teastain">read more</a>
+                </div>
+                <div class="clippath"></div>
+            </div>
+        
+            <div class="item">
+                <div class="contentBox">
+                    <h3>WEB</h3>
+                    <img src="images/tk2.png" width="230" >
+                    <a href="https://wizardly-meninsky-1de978.netlify.app/index.html" target="_blank" title="teastain">read more</a>
+                </div>
+                <div class="clippath"></div>
+            </div>
+
+            <div class="item">
+                <div class="contentBox">
+                    <h3>WEB</h3>
+                    <img src="images/tk3.png" width="230" >
+                    <a href="https://jpselection.tw/" target="_blank" title="DUO">read more</a>
+                </div>
+                <div class="clippath"></div>
+            </div>
+            
+           
+            
+                
+            <div class="item">
+                <div class="contentBox">
+                    <h3>PORTFOLIO</h3>
+                    <img src="images/tk4.png" width="230" >
+                    <a href="albume_select.html" target="_blank">read more</a>
+                </div>
+                <div class="clippath"></div>
+            </div>
+
+            
+            
+        </div>
+    </main>
+
+    <script>
+        $(".slider").slick({
+          autoplay: true,
+          autoplaySpeed: 5000,
+          adaptiveHeight: true,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          arrows: true,
+        });
+    </script>
+    <script>
+        function openMenu() {
+          console.log("called");
+          document.querySelector(".btn_area").classList.toggle("close");
+        }
+    </script>
+    <script>
+        $(function(){
+            $('a[href^=#]').click(function(){
+                var speed = 500;
+                var href= $(this).attr("href");
+                var target = $(href == "#" || href == "" ? 'html' : href);
+                console.log("href", href, "target", target);
+                var position = target.offset().top;
+                $("html, body").animate({scrollTop:position}, speed, "swing");return false;
+            });
+        });
+    </script>
+
+</body>
+    
+</html>
+
+      
+
+      
