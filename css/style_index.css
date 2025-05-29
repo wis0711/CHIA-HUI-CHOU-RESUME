@@ -192,10 +192,10 @@ nav ul li a:hover:before {
   .wrapAreaBg {
     position: relative;
   }
-/*   
-  .fv {
+  
+  /* .fv {
     margin: 3.1%;
-  } */
+  }
   
   .fv_action {
     position: relative;
@@ -206,7 +206,7 @@ nav ul li a:hover:before {
     width: 90%;
     top: 5%;
     left: 5%;
-  }
+  } */
   
   .offer01,
   .offer02 {
